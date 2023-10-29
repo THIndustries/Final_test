@@ -1,0 +1,44 @@
+ 921  ll
+  922  cd /home
+  923  cat > home_animals
+  924  cat > pack_animals
+  925  cat home_animals pack_animals > animals
+  926  cat animals
+  927  mv animals mans_friends
+  928  ls -all
+  929  cd ..
+  930  pwd
+  931  mkdir Final_test_folder
+  932  cd Final_test_folder/
+  933  mv mans_friends /Final_test_folder/
+  934  cd /home/
+  935  mv mans_friends /Final_test_folder/
+  936  cd /Final_test_folder/
+  937  ls -a
+  938  cd/
+  939  cd /
+  940  apt update
+  941  wget https://dev.mysql.com/get/mysql-apt-config_0.8.23-1_all.deb
+  942  dpkg -i mysql-apt-config_0.8.23-1_all.deb
+  943  apt-get update
+  944  apt-get install mysql-server
+  945  wget ftp.ru.debian.org/debian
+  946  dpkg -i debhelper_13.11.7_all.deb
+  947  wget deb http://ftp.ru.debian.org/debian sid main
+  948  dpkg -i debhelper_13.11.7_all.deb
+  949  wget https://download.docher.com/linux/ubuntu/dists/jammy/p
+  950  ooL/stabLe/amd6v/docher-ce-cLi_28 . 18 . 133-8ubuntu-jammy_amd6V . deb
+  951  This text was recognized by the built-in Ocrad engine. A better transcription may be attained by right clicking on the selection and changing the OCR engine to "Tesseract" (under the "Language" menu). This message can be removed in the future by unchecking "OCR Disclaimer" (under the Options menu). More info: http://projectnaptha.com/ocrad
+  952  wget https://download.docher.com/linux/ubuntu/dists/jammy/pool/stabLe/amd6v/docher-ce-cLi_28.18.133-8ubuntu-jammy_amd6V.deb
+  953  clear
+  954  wget https://download.docher.com/linux/ubuntu/dists/jammy/pool/stabLe/amd6v/docher-ce-cLi_28.18.133-8ubuntu-jammy_amd6V.deb
+  955  wget https://download.docker.com/linux/ubuntu/dists/jammy/pool/stable/amd64/docker-ce-cli_20.10.13~3~0~ubuntu-jammy_amd64.deb
+  956  сдуф
+  957  clear
+  958  apt update
+  959  apt search gimp
+  960  apt install gimp
+  961  clear
+  962  dpkg -l gimp
+  963  apt-get remove gimp
+  964  history
