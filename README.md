@@ -12,7 +12,7 @@
 
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
 из этого репозитория:
-![Иллюстрация к проекту](https://github.com/THIndustries/Final_test/blob/main/03.JPG)
+![Иллюстрация к проекту](https://github.com/THIndustries/Final_test/blob/main/03.1.JPG)
 
 4. Установить и удалить deb-пакет с помощью dpkg.
 ![Иллюстрация к проекту](https://github.com/THIndustries/Final_test/blob/main/4.1.JPG)
