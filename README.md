@@ -26,3 +26,129 @@ https://github.com/THIndustries/Final_test/blob/main/%D0%B8%D1%81%D1%82%D0%BE%D1
 животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные
 войдут: Лошади, верблюды и ослы):
 ![Иллюстрация к проекту](https://github.com/THIndustries/Final_test/blob/main/6.1.JPG)
+
+7. В подключенном MySQL репозитории создать базу данных “Друзья
+человека”:
+![Иллюстрация к проекту](https://github.com/THIndustries/Final_test/blob/main/7.JPG)
+
+8. Создать таблицы с иерархией из диаграммы в БД
+![Иллюстрация к проекту](https://github.com/THIndustries/Final_test/blob/main/8.JPG)
+
+
+
+9. Заполнить низкоуровневые таблицы именами(животных), командами
+которые они выполняют и датами рождения:
+
+mysql> CREATE TABLE cats
+    -> (
+    ->     Id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Name VARCHAR(20),
+    ->     Birthday DATE,
+    ->     Commands VARCHAR(50),
+    ->     Genus_id int,
+    ->     Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.19 sec)
+
+mysql> INSERT INTO cats (Name, Birthday, Commands, Genus_id)
+    -> values ('Puh', '2020-05-09', 'кис-кис', 1),
+    -> ('Рыжик', '2015-08-07', 'брысь', 1),
+    -> ('Барсик', '2017-03-04', 'сюда', 1);
+Query OK, 3 rows affected (0.01 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> CREATE TABLE dogs
+    -> (
+    ->     Id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Name VARCHAR(20),
+    ->     Birthday DATE,
+    ->     Commands VARCHAR(50),
+    ->     Genus_id int,
+    ->     Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql>
+mysql> INSERT INTO dogs (Name, Birthday, Commands, Genus_id)
+    -> VALUES ('Пёс', '2020-01-01', 'фас, лежать, лапу, голос', 2),
+    -> ('Шарф', '2021-06-12', "молчать, лежать, лапу", 2),
+    -> ('Пятак', '2018-05-01', "сальто, лежать, лапу, след, фас", 2),
+    -> ('Слон', '2021-05-10', "сидеть, лежать, фу, место", 2);
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> CREATE TABLE hamsters
+    -> (
+    ->     Id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Name VARCHAR(20),
+    ->     Birthday DATE,
+    ->     Commands VARCHAR(50),
+    ->     Genus_id int,
+    ->     Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> INSERT INTO hamsters (Name, Birthday, Commands, Genus_id)
+    -> VALUES ('Малой', '2020-11-11', '', 3),
+    -> ('Медведь', '2021-07-11', "сидеть", 3),
+    -> ('Ниндзя', '2021-03-10', '', 3),
+    -> ('Бурый', '2022-01-09', '', 3);
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> CREATE TABLE horses
+    -> (
+    ->     Id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Name VARCHAR(20),
+    ->     Birthday DATE,
+    ->     Commands VARCHAR(50),
+    ->     Genus_id int,
+    ->     Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> INSERT INTO horses (Name, Birthday, Commands, Genus_id)
+    -> VALUES ('Бег', '2020-01-12', 'стоять, шагом', 1),
+    -> ('Снег', '2017-03-12', "трусцой, шагом, хоп", 1),
+    -> ('Ухо', '2016-07-12', "ану, шагом, хоп, стоять", 1),
+    -> ('Хвост', '2020-11-10', "бегом, шагом, хоп", 1);
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> CREATE TABLE donkeys
+    -> (
+    ->     Id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Name VARCHAR(20),
+    ->     Birthday DATE,
+    ->     Commands VARCHAR(50),
+    ->     Genus_id int,
+    ->     Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> INSERT INTO donkeys (Name, Birthday, Commands, Genus_id)
+    -> VALUES ('Ушастый', '2018-03-12', "пошёл", 1),
+    -> ('Хвостатый', '2021-11-02', "пошёл", 1),
+    -> ('Умный', '2020-02-10', "пошёл", 1),
+    -> ('Упрямый', '2022-11-12', "пошёл", 1);
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> CREATE TABLE camels
+    -> (
+    ->     Id INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Name VARCHAR(20),
+    ->     Birthday DATE,
+    ->     Commands VARCHAR(50),
+    ->     Genus_id int,
+    ->     Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> INSERT INTO camels (Name, Birthday, Commands, Genus_id)
+    -> VALUES ('Быстрый', '2022-04-10', 'стоять', 3),
+    -> ('Медленый', '2009-01-11', "остановись", 3),
+    -> ('Омни', '2005-01-12', "быстро", 3),
+    -> ('Плевок', '2012-02-01', "кругом", 3);
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
