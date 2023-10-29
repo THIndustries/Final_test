@@ -38,7 +38,7 @@ https://github.com/THIndustries/Final_test/blob/main/%D0%B8%D1%81%D1%82%D0%BE%D1
 
 9. Заполнить низкоуровневые таблицы именами(животных), командами
 которые они выполняют и датами рождения:
-
+```
 mysql> CREATE TABLE cats
     -> (
     ->     Id INT AUTO_INCREMENT PRIMARY KEY,
@@ -152,3 +152,4 @@ mysql> INSERT INTO camels (Name, Birthday, Commands, Genus_id)
     -> ('Плевок', '2012-02-01', "кругом", 3);
 Query OK, 4 rows affected (0.01 sec)
 Records: 4  Duplicates: 0  Warnings: 0
+```
