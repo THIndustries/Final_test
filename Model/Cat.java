@@ -1,4 +1,4 @@
-package Program;
+package Model;
 
 public class Cat extends Pet{
 

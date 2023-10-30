@@ -167,6 +167,8 @@ Records: 4  Duplicates: 0  Warnings: 0
 прошлую принадлежность к старым таблицам.
 ![Иллюстрация к проекту](https://github.com/THIndustries/Final_test/blob/main/12.JPG)
 
+13.Создать класс с Инкапсуляцией методов и наследованием по диаграмме:
+https://github.com/THIndustries/Final_test/tree/main/Program
 
 
 
