@@ -171,5 +171,10 @@ Records: 4  Duplicates: 0  Warnings: 0
 https://github.com/THIndustries/Final_test/tree/main/Program
 
 
+14. Написать программу, имитирующую работу реестра домашних животных:
+https://github.com/THIndustries/Final_test/blob/main/Program.java
+
+15. Создайте класс Счетчик, у которого есть метод add(), увеличивающий̆ значение внутренней̆ int переменной̆ на 1 при нажатии “Завести новое животное” Сделайте так, чтобы с объектом такого типа можно было работать в блоке try-with-resources. Нужно бросить исключение, если работа с объектом типа счетчик была не в ресурсном try и/или ресурс остался открыт. Значение считать в ресурсе try, если при заведении животного заполнены все поля:
+https://github.com/THIndustries/Final_test/blob/main/Controller/Counter.java
 
 
